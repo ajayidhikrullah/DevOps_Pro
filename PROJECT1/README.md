@@ -25,4 +25,85 @@
     - Run `pwd -L` to print environment variable content, including symbolic links
     ![Alt text](./Images/pwd_cmd.png)
 
-3. 
+3.  **Create `cd` command**
+
+    Functions: required to navigate through files and directory, depends on the current directory.
+
+    - Run `cd` to change the working directory
+
+    - or Run `cd ubuntu` to switch the directory path
+    ![Alt text](./Images/cd_cmd.png)
+
+4. **Create `ls` command**
+
+    Functions: required to list the item in the directory or contents
+
+    The current working directoru is ~~dhikrullah@Ajayi:~/DevOps_Pro/PROJECT1$~~
+
+    - Run `ls` to view or list the content of the directory.
+    ![Alt text](./Images/ls_cmd.png)
+
+    ```console
+    - Run `ls -R` to list files in the sub-drectories
+    - Run `ls -A` to show all hiddens files in addition to the visible ones.
+    - Run `ls -lh` to show the files sizes in an easy readable formats with files types.
+    ```
+    ![Alt text](./Images/ls_extensions.png)
+
+5. **Create `cat` command -> Concatenate**
+
+    Functions: Requires to list, combine file content to the standard output and can merge files to another file.
+
+    The current working directory is __dhikrullah@Ajayi:~/testing_folder_linux_cmd$__
+
+    - Run `cat (filename.extension)`
+
+    - i.e. `cat cat_test1.txt` to show the content in the text.
+
+    __Another method__
+
+    ```console
+    cat [cat_test1.txt cat_test2.txt > cat_test3] //this merges files1, files 2 into files3.
+    tac [cat_test3] //displays content in any specified files.
+    ```
+    ![Alt text](./Images/cat_cmd.png)
+
+6.  ### **cp**:
+    Cp is used to copy files or directories, this is majorly used every single day and almost every seconds to copy and paste text, files and folders.
+
+    MV is used to move files/folders and text from one location to another.
+
+    Adding flag `-R` copies/moves the entire directory, depending on the if you're `copying` or `moving` files, folders or text.
+
+    - to copy files to a directory, enter the file names followed by the destination directory/folder.
+    
+    ```console
+    cp ['Requirement specification.pptx'] to [/home/dhikrullah/testing_folder_linux_cmd]
+    cp [cat_test1.txt to cat_test2.txt]
+    ```
+    ![Alt text](./Images/cp_cmd.png)
+
+7.  ### **mv**:
+    MV is used to move files/folders and text from one location to another.
+
+    Adding flag `-R` copies/moves the entire directory, depending on the if you're `copying` or `moving` files, folders or text.
+
+    ```console
+    mv [file1 to another location] //mv cat_test3 to :/home/dhikrullah/DevOps_Pro
+    ```
+    ![Alt text](./Images/mv_png.png)
+
+8.  **Create `mkdir` is used to create 1 or multiple directories/folders, which also set permissions for each of them
+
+    Functions: Required to make directory.
+
+    **To make directory called *directoryFolder* in  /home/dhikrullah/testing_folder_linux_cmd run:**
+    
+    - Run `mkdir directoryFolder`
+    
+    **To make sub directory inside directory folder as shown above, do:
+    - Run `mkdir subDirectoryFolder`
+
+    ![Alt text](./Images/mkdir_cmd.png)
+
+9. 
