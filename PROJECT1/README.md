@@ -91,9 +91,9 @@
     ```console
     mv [file1 to another location] //mv cat_test3 to :/home/dhikrullah/DevOps_Pro
     ```
-    ![Alt text](./Images/mv_png.png)
+    ![Alt text](./Images/mv_cmd.png)
 
-8.  **Create `mkdir` is used to create 1 or multiple directories/folders, which also set permissions for each of them
+8.  ## **Create `mkdir` is used to create 1 or multiple directories/folders, which also set permissions for each of them**
 
     Functions: Required to make directory.
 
@@ -101,9 +101,36 @@
     
     - Run `mkdir directoryFolder`
     
-    **To make sub directory inside directory folder as shown above, do:
+    *To make sub directory inside directory folder as shown above, do:*
     - Run `mkdir subDirectoryFolder`
 
     ![Alt text](./Images/mkdir_cmd.png)
 
-9. 
+9.  ### **rmdir, rm**:
+    Rmdir is basically used to remove or permanently delete an empty director or path folder., Users must have some `sudo` priviledges to perform this action.
+
+    Rm command is basically to delete files within some directory and users performing this actions should have `write` permissions too
+
+    ```console
+    rmdir rmDirFolderTest                                           //deletes sub-directory
+
+    rm 'Requirement Specification.pptx'                             //delete a single file in directory
+    rm cat_test1.txt cat_test2.txt                                  //delete multiple files in directory
+    ```
+
+    ![Alt text](./Images/rm_rmdir_cmd.png)
+
+10. ### **touch, locate, find, grep**:
+    - Touch command is used to create a new file that is empty or also mofidy and generate a timestamp in linux cmd.
+    
+    - Find command is used to search for documents within specific directory or folders and perform operations. //[find] [option] [path] [expression]
+
+    - Grep command is an acronym for global expression print used to find words by search all text in documents.
+
+    ```console
+    touch 
+    locate -i //-i argument turns off case sensitivity, which means, you can search for files without the exact name.
+    ```
+    ![Alt text](./Images/touch_locate_find_grep_cmd.png)
+
+11. 
