@@ -220,6 +220,45 @@
     ![Alt text](./Images/history_cmd.png)
     ![Alt text](./Images/echo_cmd.png)
 
-    **Zip, Unzip, hostname, useradd, userdel, apt-get, nano, vi, jed, alias, uname, top, history, man, Echo**:
+12  **Zip, Unzip, hostname, useradd, userdel, apt-get, nano, vi, jed, alias, unalias, su, htop, ps**:
+    -   Zip is is used to compress files and folders to preferred ZIP file
+        zip is also useful for archiving files
 
+    -   Unzip is when you want to extract files from a zipped file or folders.
+        see examples below.
 
+    -   Hostname is used to know your ssystem hostname
+    -   useradd is used to to create a new account as Linux can have multiple users using it.
+    -   Userdel - used to delete another unwanted user.
+    -   Apt-get used to handle Advanced pacage tools (APT) libraries in Linux.
+        it allows to bundle and retrieve information authenticated sources to manege, update , remove and install software and its dependencies. it syncronizes files from its sources, it also updates and installed direcrlty from software sources.
+    -   Nano nano works with all file systems and it's used as a text editor.
+    -   VI - is also used to edit text or write to script via text editor.
+    -   Alias: you can create shortcut with same functionality as a command, file name or text. It replaces one string with another based on instructions.
+    -   unalias -     Unalias \\deletes existing alias for a key, eg \\unalias [alias_name] 
+    -   su - allows us to run different programms on Linux as a different user, say like a proxy.
+    -   htop command - Monitors system interactively, andserver processes in real time as it should be. It can be installed with default package manager.
+    -   Ps commands: produces all snapshot of all running processes.
+
+    ```console
+    zip [options] zipfile file1, file2 \\
+    Unzip unzip [options] file_name.zip \\
+    hostname [option] \\hostname -i
+    useradd dhikrullah or useradd Ajayi
+    userdel Dhikrullah \\this asks for password.
+    apt-get [options] (command) \\
+    nano \\nano filename CTRL + C to exit.
+    vim file name \\type :qa to exit the Vim
+    Alias \\alias Name=String \\make k alias for Kill command, alias k='kill'
+    Unalias \\deletes existing alias for a key, eg \\unalias [alias_name]
+    PS: ps
+    Htop \\htop displays another dialogue processing page as seen in screenshot.
+
+    ```
+![Alt text](./Images/htop_cmd.png)
+![Alt text](./Images/ps_su_cmd.png)
+![Alt text](./Images/nano_cmd.png)
+![Alt text](./Images/vi_cmd.png)
+![Alt text](./Images/hostname_cmd.png)
+![Alt text](./Images/zip_cmd.png)
+![Alt text](./Images/unzip_cmd.png)
