@@ -133,4 +133,93 @@
     ```
     ![Alt text](./Images/touch_locate_find_grep_cmd.png)
 
-11. 
+11. ### **df, du, head, tail, diff, tar**:
+
+    DF is basically used to share the report of the disk usage
+
+    DU is used to also check how much a folder or file is taking or using.
+
+    Head is used to show the first ten lines of a file
+
+    TAIL is to check the last ten lines in a file, just as the name implies, Tail -something like end.
+
+    DIff as the name impless is difference to look for something.
+
+    Tar is used for archive files into a TAR format, somehow like ZIP etc.
+
+    ```console
+    df -h                                   //this displays information in human readable format.
+    du  /home/dhikrullah/DevOps_Pro/        //usually, du command takes the directory of file you want to check its space.
+    head cat_test3 //this print             //This is a text line typed from Linux shell to the text docs
+                                            //This is another text written to textfile2 using the linux shell or cmd.
+    tail cat_test                           //This is another text written to textfile2 using the linux shell or cmd.
+                                            //**note, it will print the same thing because the text in both
+                                            
+    diff cat_test3 cat_test44
+
+    tar -cvf newarchiveTEst.tar /home/dhikrullah/testing_folder_linux_cmd/cat_test3 cat_test44
+    ```
+    ![Alt text](./Images/df_du_cmd.png)
+    ![Alt text](./Images/head_tail_cmd.png)
+    ![Alt text](./Images/diff_tar_cmd.png)
+
+    ### **File Permission and Ownership**
+    **chmod, chown, jobs, kill, ping, wget, uname, top, history, man, Echo**:
+    Chmod from the name means to change mode, used to change access permission and the special mode flags of the system ojects
+    Chmod also modifies files or directory's read and wite, execute permissions.
+    Each file is associated with 3 user classes - _owner, group and others_.
+
+    **Chown** is used to modify or change owner of directory or file.
+
+    **Jobs** used to display all the running processes along with their statuses, it's only available in csh, bash etc.
+
+    **Kill** used to terminate unresponsive apps or freezing apps. You have to know the process ID number to terminate and run the command.
+
+    **ping** is used to to check wether network or signal is reachable. You can always ping any IP address.
+
+    **wget** this allows files download from the internet, it usually works in the background, it recieves files using HTTPS, HTTP and FTP protocols.
+    wget [option] URL
+    **uname** this print detailed info about your linux system and hardware, such as MAchine name, OS, kernetl etc.
+    uname -a
+
+    **Top** displays all the running processes and a dynamic real time viiew of the current system. Sums up resource utilization from the CPU to memory usage.
+    - it can be used to terminate apps using too much resources and slwoing the system.
+    Top
+
+    **History** the system will list upto 500 previously executed commands, allowing you to reuse them without re-entering.
+    - Only users with SUDO priviledges can execute this command
+    History [option]
+
+    **man** prides user manual of any commands or utilities you can run in a terminal, including the name, description and options etc.
+    man [command_name]
+    man ls
+    man [option] [section_number] [command_name] etc
+
+    - to see the section 2 of the command manual use
+
+    `man 2 ls`
+
+    **Echo** is used to display line of text, echo is a syntax of PHP backend language too.
+
+    ```console
+    chmod 777 cat_test44            //allows all to read/write and execute on cat_test44//
+    chown dhikrullah cat_test44
+    jobs [option] jobID
+    kill SIGTERM PID //check PID with ps ux//
+    ping google.com or 142.250.179.174
+    wget [https://downloadpdffiles.com]
+    uname [option] //prints Linux text for me
+    top //top - 16:15:39 up 6 days, 23:14,  2 users,  load average: 0.23, 0.09, 0.06
+    history //prints all previously used commands
+    man prints the manual of a corresponding command, eg //man man `man 2 ls`  man [command_name] , man ls, man [option][section_number] [command_name] etc
+    Echo // echo 
+    ```
+    ![Alt text](./Images/manual_cmd.png)   
+    ![Alt text](./Images/ping_cmd.png)
+    ![Alt text](./Images/top_cmd.png)
+    ![Alt text](./Images/history_cmd.png)
+    ![Alt text](./Images/echo_cmd.png)
+
+    **Zip, Unzip, hostname, useradd, userdel, apt-get, nano, vi, jed, alias, uname, top, history, man, Echo**:
+
+
