@@ -12,7 +12,7 @@
     2. Navigate to the directory
     3. Run the ```git init``` command to initialize. as shown below.
 
-![Alt text](./Images/git_init.png.png)
+![Alt text](./Images/git_init.png)
 
 ##  **First commit**
     commit is adding some wordings to your code to show what it does and make it easy to understand what the push is about.
